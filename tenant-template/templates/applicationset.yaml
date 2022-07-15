@@ -9,7 +9,7 @@ spec:
       # git repository to get the variables from
       repoURL: https://github.com/mperendija/gitops-testing.git
       # branch used to get the variables from
-      revision: tenant-projects-test
+      revision: sub-module
       files:
         # path to the directory that includes directories to read as variables
         - path: tenants/{{ .Values.namespace }}/**/config-project.json
@@ -26,7 +26,7 @@ spec:
       source:
         # source repo, in this example both repositories are the same
         repoURL: https://github.com/mperendija/gitops-testing.git
-        targetRevision: tenant-projects-test
+        targetRevision: sub-module
         # path to read manifests from, here it's the full path not only the name of the directory
         path: 'project-template/{{ print "{{type}}" }}'
         # plugin:
