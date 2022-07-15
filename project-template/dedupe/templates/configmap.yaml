@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: project-dedupe-configmap-{{ .Values.name }}
+  namespace: {{ .Values.namespace }}
+data:
+  testprop: {{ .Values.testmap.testprop }}
+
