@@ -6,5 +6,4 @@ metadata:
 data:
   testprop: {{ .Values.testmap.testprop }}
   hello: world
-  bull: sh*t
 
